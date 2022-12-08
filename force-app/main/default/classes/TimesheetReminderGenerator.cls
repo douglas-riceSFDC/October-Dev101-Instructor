@@ -1,4 +1,7 @@
 public with sharing class TimesheetReminderGenerator {
+    public static void sampleApexInput(Map<Id, Integer> input) {
+        System.debug(input);
+    }
     
     public static void queueReminderCreation(List<Timesheet__c> insertedTimesheets) {
         List<Id> timesheetIds = new List<Id>();

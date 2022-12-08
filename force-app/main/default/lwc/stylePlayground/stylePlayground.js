@@ -1,9 +1,11 @@
 import { LightningElement } from 'lwc';
+import passingMaps from '@salesforce/apex/StylePlaygroundController/passingMaps';
 
 export default class StylePlayground extends LightningElement {
     value = 'inProgress';
 
     textInput = '';
+    mapInput = {};
 
     get options() {
         return [
@@ -20,6 +22,6 @@ export default class StylePlayground extends LightningElement {
     sendEvent(event) {
         //let dataElement = event.currentTarget.dataset.name;
 
-        console.log(this.textInput);
+        
     }
 }
