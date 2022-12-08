@@ -1,0 +1,11 @@
+<aura:component>
+
+    <aura:attribute name="timesheets" type="List" />
+
+    <aura:iteration items="{!v.timesheets}" var="timesheet">
+        <div>
+            {!timesheet.Name}
+        </div>
+    </aura:iteration>
+
+</aura:component>

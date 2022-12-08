@@ -1,0 +1,26 @@
+<apex:page showHeader="true" standardController="Timesheet__c" extensions="HelloWorldController">
+
+    <h1>{!WelcomeMessage}</h1>
+
+    <h2>{!$User.LastName}</h2>
+
+    <ul>
+        <apex:repeat value="{!StringCollection}" var="singleString">
+            <li><strong>{!singleString}</strong></li>
+        </apex:repeat>
+    </ul>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+    </ul>
+
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!StringCollection}" var="singleString">
+            <apex:column value="{!singleString}" />
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+
+</apex:page>

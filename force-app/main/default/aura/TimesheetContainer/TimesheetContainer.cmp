@@ -1,0 +1,11 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId" 
+                controller="ApproveOrRejectTimesheetsController">
+
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="timesheets" type="List" default="[]" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <c:TimesheetsTable timesheets="{!v.timesheets}" />
+    <c:createNewTimesheetButton projectId="{!v.recordId}" />
+</aura:component>
