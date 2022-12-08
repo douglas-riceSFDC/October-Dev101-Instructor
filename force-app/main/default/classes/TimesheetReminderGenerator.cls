@@ -26,8 +26,8 @@ public with sharing class TimesheetReminderGenerator {
             generatedReminders.add(reminder);
             
         }
-
-        System.debug('Tasks - ' + generatedReminders);
+        
+        System.debug('After reminder generation - ' + generatedReminders);
 
         try {
             insert generatedReminders;
