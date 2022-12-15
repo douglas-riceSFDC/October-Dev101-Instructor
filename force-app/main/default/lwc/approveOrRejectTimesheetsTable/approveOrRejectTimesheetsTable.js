@@ -13,7 +13,9 @@ export default class ApproveOrRejectTimesheetsTable extends LightningElement {
         { label: 'Name', fieldName: 'Name' },
         { label: 'Employee', fieldName: 'EmployeeName' },
         { label: 'Status', fieldName: 'Status__c' },
-        { label: 'Number of Hours', fieldName: 'Total_Number_of_Hours__c' }
+        { label: 'Number of Hours', fieldName: 'Total_Number_of_Hours__c' },
+        { label: 'Created Date', fieldName: 'CreatedDate' }
+
     ];
 
     getSelectedRows(event) {

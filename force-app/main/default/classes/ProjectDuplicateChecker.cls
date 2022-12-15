@@ -25,10 +25,16 @@ public with sharing class ProjectDuplicateChecker {
     }
 
     public class ProjectDuplicateInput {
-        @InvocableVariable
-        public String projectName;
+        @AuraEnabled
+        public String ProjectName {get; set;}
+
+        @AuraEnabled
+        public List<Account> AccountInput {get; set;}        
         
-        @InvocableVariable
+        List<ProjectDuplicateOutput> Outputs {get; set;}
+
+        
+        @AuraEnabled
         public Date todaysDate;
     }
 

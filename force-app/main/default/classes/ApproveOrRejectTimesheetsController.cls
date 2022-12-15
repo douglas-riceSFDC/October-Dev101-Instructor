@@ -3,7 +3,7 @@ public with sharing class ApproveOrRejectTimesheetsController {
     @AuraEnabled(cacheable=true)
     public static List<Timesheet__c> getTimesheetsByProject(Id projectId) {
         return [
-            SELECT Id, Name, Employee__c, Total_Number_of_Hours__c, Employee__r.Name, Status__c
+            SELECT Id, Name, CreatedDate, Employee__c, Total_Number_of_Hours__c, Employee__r.Name, Status__c
             FROM Timesheet__c
             WHERE Project__c = :projectId
         ];
