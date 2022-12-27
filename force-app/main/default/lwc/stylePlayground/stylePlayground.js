@@ -1,5 +1,4 @@
 import { LightningElement } from 'lwc';
-import passingMaps from '@salesforce/apex/StylePlaygroundController/passingMaps';
 
 export default class StylePlayground extends LightningElement {
     value = 'inProgress';
